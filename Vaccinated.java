@@ -116,7 +116,7 @@ public class Vaccinated extends AppCompatActivity {
                                 JSONObject jsonObject=jsonArray.getJSONObject(i);
                                 String countryName=jsonObject.getString("country");
                                 JSONObject object=jsonObject.getJSONObject("timeline");
-                                String timeline=object.getString("7/6/21");
+                                String timeline=object.getString("7/24/21");
 
                                 modelVaccinated =new ModelVaccinated(countryName,timeline);
                                 modelVaccinatedList.add(modelVaccinated);
