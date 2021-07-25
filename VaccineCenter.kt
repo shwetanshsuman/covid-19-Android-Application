@@ -32,7 +32,7 @@ class VaccineCenter : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vaccine_center)
 
-        supportActionBar!!.title = "Vaccine Centers"
+        supportActionBar!!.title = "Vaccination Centers"
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
