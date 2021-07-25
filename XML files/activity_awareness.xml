@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AwarenessActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa"
+                        android:text="Things to do"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:id="@+id/awaView"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/color_two"
+                        android:layout_below="@+id/tvAwa"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa1"
+                        android:paddingRight="5dp"
+                        android:background="@drawable/rounded_image"
+                        android:id="@+id/ivAwa1"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/awaView"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:paddingEnd="5dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa1"
+                        android:layout_marginBottom="15dp"
+                        android:layout_below="@+id/ivAwa1"
+                        android:text="Get Vaccinated"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa2"
+                        android:id="@+id/ivAwa2"
+                        android:background="@drawable/rounded_image_two"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/tvAwa1"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa2"
+                        android:layout_below="@+id/ivAwa2"
+                        android:layout_marginBottom="15dp"
+                        android:text="Wear Face Mask"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa3"
+                        android:id="@+id/ivAwa3"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/rounded_image_two"
+                        android:layout_below="@+id/tvAwa2"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa3"
+                        android:layout_below="@+id/ivAwa3"
+                        android:text="Keep Social Distancing"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa4"
+                        android:background="@drawable/rounded_image_two"
+                        android:id="@+id/ivAwa4"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/tvAwa3"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa4"
+                        android:layout_below="@+id/ivAwa4"
+                        android:text="Use Hand Sanitizer"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa5"
+                        android:background="@drawable/rounded_image_two"
+                        android:id="@+id/ivAwa5"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/tvAwa4"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa5"
+                        android:layout_below="@+id/ivAwa5"
+                        android:text="Wash Hands"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa6"
+                        android:background="@drawable/rounded_image_two"
+                        android:id="@+id/ivAwa6"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/tvAwa5"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa6"
+                        android:layout_below="@+id/ivAwa6"
+                        android:text="Avoid Handshake"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="230dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/awa7"
+                        android:background="@drawable/rounded_image_two"
+                        android:id="@+id/ivAwa7"
+                        android:scaleType="fitCenter"
+                        android:layout_below="@+id/tvAwa6"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAwa7"
+                        android:layout_below="@+id/ivAwa7"
+                        android:text="Cough on your elbow"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/aclonica"
+                        android:gravity="center_horizontal"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

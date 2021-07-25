@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity"
+    android:background="@color/color_white"
+    android:minWidth="19dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="@color/color_white"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                app:subtitleTextColor="@color/textColor"
+                app:titleTextColor="@color/textColor" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_white">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/dark_grey"
+                        android:id="@+id/about"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginTop="20dp"
+                                android:fontFamily="@font/aclonica"
+                                android:text="What is Covid-19?"
+                                android:id="@+id/tvQues"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="20dp"
+                                android:id="@+id/quesView"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@color/color_two"
+                                android:layout_below="@+id/tvQues"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_below="@+id/quesView"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/aclonica"
+                                android:text="@string/about_covid"
+                                android:id="@+id/tvAns1"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_below="@+id/tvAns1"
+                                android:layout_marginRight="25dp"
+                                android:fontFamily="@font/aclonica"
+                                android:text="@string/about_covid2"
+                                android:textColor="@color/white"
+                                android:id="@+id/tvAns2"
+                                android:textSize="15sp"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@color/color_two"
+                                android:layout_below="@+id/tvAns2"/>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp"
+                                android:text="Symptoms"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/textColor"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:id="@+id/sympView"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@color/color_two"
+                                android:layout_below="@+id/tvSymp"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp1"
+                                android:background="@drawable/rounded_image"
+                                android:id="@+id/ivSymp1"
+                                android:scaleType="fitCenter"
+                                android:layout_below="@+id/sympView"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp1"
+                                android:layout_below="@+id/ivSymp1"
+                                android:text="Headache"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp2"
+                                android:id="@+id/ivSymp2"
+                                android:background="@drawable/rounded_image"
+                                android:scaleType="fitCenter"
+                                android:layout_below="@+id/tvSymp1"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp2"
+                                android:layout_below="@+id/ivSymp2"
+                                android:text="Flu"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp3"
+                                android:id="@+id/ivSymp3"
+                                android:scaleType="fitCenter"
+                                android:background="@drawable/rounded_image"
+                                android:layout_below="@+id/tvSymp2"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp3"
+                                android:layout_below="@+id/ivSymp3"
+                                android:text="Out of Breath"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp4"
+                                android:background="@drawable/rounded_image"
+                                android:id="@+id/ivSymp4"
+                                android:scaleType="fitCenter"
+                                android:layout_below="@+id/tvSymp3"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp4"
+                                android:layout_below="@+id/ivSymp4"
+                                android:text="Severe Cough"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp5"
+                                android:background="@drawable/rounded_image"
+                                android:id="@+id/ivSymp5"
+                                android:scaleType="fitCenter"
+                                android:layout_below="@+id/tvSymp4"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp5"
+                                android:layout_below="@+id/ivSymp5"
+                                android:text="Sore Throat"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="230dp"
+                                android:layout_height="230dp"
+                                android:layout_marginLeft="25dp"
+                                android:src="@drawable/symp6"
+                                android:background="@drawable/rounded_image"
+                                android:id="@+id/ivSymp6"
+                                android:scaleType="fitCenter"
+                                android:layout_below="@+id/tvSymp5"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvSymp6"
+                                android:layout_below="@+id/ivSymp6"
+                                android:text="Fever"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/textColor"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="15dp"
+                                android:fontFamily="@font/aclonica"
+                                android:gravity="center_horizontal"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer_menu">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
